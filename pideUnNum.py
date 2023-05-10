@@ -1,5 +1,5 @@
 def pideUnNum():
-    msg = "Dame un num: "
+    msg = "Introduce la opcion: "
     entrada = ''
     invalido = False
     while not entrada.isnumeric():
