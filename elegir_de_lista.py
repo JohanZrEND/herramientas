@@ -18,8 +18,8 @@ def elegir_indice(lista):
 
     return opcion
 
-def elegir_valor(lista):
-    return lista[elegir_indice(lista)]
+def elegir_valor(lista,opcion):
+    return lista[opcion]
 
 def elegir_indice_azar(listas):
     return random.randrange(len(listas))
