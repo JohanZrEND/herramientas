@@ -1,3 +1,4 @@
+import random
 from pideUnNum import pideUnNum 
 
 def presentacion(lista):
@@ -8,14 +9,21 @@ def presentacion(lista):
         contador +=1
     print(msg)
 
-def elegirlista(lista):
+def elegir_indice(lista):
+    presentacion(lista)
     opcion = pideUnNum()
-    if opcion in range(len(lista)):
-        print(f"Has elegido el elemento {lista[opcion]}")
-    else:
-        print("mete un numero del 0 al 4")
-        elegirlista(lista)
+    while opcion not in range(len(lista)):
+        print("Introduce un numero dentro del rango")
+        opcion = pideUnNum()
+
     return opcion
 
-# if __name__ == "__main__":
-#     lista = ["piedra", "papelito", "manostijeras", "lacoste", "Spock"]
+def elegir_valor(lista):
+    return lista[elegir_indice(lista)]
+
+def elegir_indice_azar(listas):
+    return random.randrange(len(listas))
+
+def elegir_valor_azar(lista):
+    return random.choice(lista)
+
