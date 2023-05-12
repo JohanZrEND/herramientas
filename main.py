@@ -10,8 +10,7 @@ def main():
     valor_elemento_random = elegir_valor(lista, makina)
 
     print(f"\nLa Maquina ha elegido la opcion {makina}, la cual es {valor_elemento_random}\n")
-    print(f"\nTú has seleccionado la opcion {opcion} ")
-    print(f"\nElección: {valor_elemento}")
+    print(f"\nTú has seleccionado la opcion {opcion}\nElección: {valor_elemento}")
     print()
 
 main()
