@@ -12,7 +12,7 @@ def presentacion(lista):
 def elegir_indice(lista):
     presentacion(lista)
     opcion = pideUnNum()
-    while opcion not in range(len(lista) + 1):
+    while opcion not in range(1 ,len(lista) + 1):
         print("Introduce un numero dentro del rango")
         opcion = pideUnNum()
 
@@ -22,7 +22,7 @@ def elegir_valor(lista,opcion):
     return lista[opcion - 1]
 
 def elegir_indice_azar(listas):
-    return random.randrange(len(listas))
+    return random.randrange(1 ,len(listas) + 1)
 
 def elegir_valor_azar(lista):
     return random.choice(lista)
