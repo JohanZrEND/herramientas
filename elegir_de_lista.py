@@ -26,4 +26,3 @@ def elegir_indice_azar(listas):
 
 def elegir_valor_azar(lista):
     return random.choice(lista)
-
