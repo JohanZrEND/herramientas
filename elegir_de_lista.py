@@ -21,8 +21,8 @@ def elegir_indice(lista):
 def elegir_valor(lista,opcion):
     return lista[opcion - 1]
 
-def elegir_indice_azar(listas):
-    return random.randrange(1 ,len(listas) + 1)
+def elegir_indice_azar(lista):
+    return random.randrange(1 ,len(lista) + 1)
 
 def elegir_valor_azar(lista):
     return random.choice(lista)
