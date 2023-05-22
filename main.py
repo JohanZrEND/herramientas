@@ -10,7 +10,7 @@ def main():
     valor_elemento = elegir_valor(lista_random, opcion)
     valor_elemento_random = elegir_valor(lista_random, makina)
 
-    print(f"\n-------------------------------\nLa Maquina ha elegido la opcion {makina}\nElección: {valor_elemento_random}\n")
+    print(f"\n----------------------\nLa Maquina ha elegido la opcion {makina}\nElección: {valor_elemento_random}\n")
     print(f"\nTú has seleccionado la opcion {opcion}\nElección: {valor_elemento}\n")
 
 while repe:
@@ -21,8 +21,6 @@ while repe:
         repe = True
     else:
         repe = False
-
-
-
+    print(f"\n-------------------------------\n♥         Fin de juego        ♥\n-------------------------------\n")
 
 
